@@ -1,0 +1,44 @@
+
+#define TRUE 1
+#define FALSE 0
+
+typedef int StackType;
+
+StackType pop Stack*
+StackType top Stack*
+void push Stack*, StackType
+int empty Stack*
+
+struct Stack {
+	StackType* stack[(StackType) malloc];
+	int size;
+}
+
+StackType pop(Stack* s)
+{
+	return s->stack[s->size--];
+}
+
+StackType top(Stack* s)
+{
+	return s->stack[s->size];
+}
+
+void push($tack* s, StackType newVal)
+{
+	s->stack[++s->size] = newVal;
+}
+
+int empty($tack* s)
+{
+	return !s->size;
+}
+
+
+
+-----------------------------------------------------
+
+rpn
+
+
+
